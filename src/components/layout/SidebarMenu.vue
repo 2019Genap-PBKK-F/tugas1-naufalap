@@ -15,6 +15,68 @@
     </router-link>
 
     <li class="header">ME</li>
+    <router-link tag="li" class="pageLink" to="/jexcel">
+      <a>
+        <i class="fa fa-file-excel-o"></i>
+        <span class="page">JExcel</span>
+      </a>
+    </router-link>
+    <li class="treeview">
+      <a href="#">
+        <i class="fa fa-folder-o"></i>
+        <span class="treeview-title">Tugas</span>
+        <span class="pull-right-container pull-right">
+          <i class="fa fa-angle-left fa-fw"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a href="/datadasar">
+            <i class="fa fa-address-book-o"></i> Data Dasar
+          </a>
+        </li>
+        <li>
+          <a href="/aspek">
+            <i class="fa fa-address-book-o"></i> Aspek
+          </a>
+        </li>
+        <li>
+          <a href="/jenissatker">
+            <i class="fa fa-address-book-o"></i> Jenis Satker
+          </a>
+        </li>
+        <li>
+          <a href="/periode">
+            <i class="fa fa-address-book-o"></i> Periode
+          </a>
+        </li>
+        <li>
+          <a href="/masterindikator">
+            <i class="fa fa-address-book-o"></i> Master Indikator
+          </a>
+        </li>
+        <li>
+          <a href="/indikatorperiode">
+            <i class="fa fa-address-book-o"></i> Indikator Periode
+          </a>
+        </li>
+        <li>
+          <a href="/satuankerja">
+            <i class="fa fa-address-book-o"></i> Satuan Kerja
+          </a>
+        </li>
+        <li>
+          <a href="/capaianunit">
+            <i class="fa fa-address-book-o"></i> Capaian Unit
+          </a>
+        </li>
+        <li>
+          <a href="/indikatorsatker">
+            <i class="fa fa-address-book-o"></i> Indikator Satker
+          </a>
+        </li>
+      </ul>
+    </li>
     <router-link tag="li" class="pageLink" to="/tasks">
       <a>
         <i class="fa fa-tasks"></i>
@@ -100,23 +162,19 @@ export default {
 .sidebar-menu > li > a {
   padding: 12px 15px 12px 15px;
 }
-
 .sidebar-menu li.active > a > .fa-angle-left,
 .sidebar-menu li.active > a > .pull-right-container > .fa-angle-left {
   animation-name: rotate;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
-
 .treeview-title {
   z-index: 1;
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(-90deg);
   }
